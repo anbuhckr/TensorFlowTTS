@@ -22,7 +22,10 @@ if LooseVersion(pip.__version__) < LooseVersion("19"):
 # TODO(@dathudeptrai) update requirement if needed.
 requirements = {
     "install": [
-        "tensorflow-gpu==2.7.0",
+        "tensorflow==2.10.1",
+        "keras==2.10.0",
+        "tensorboard==2.10.1",
+        "tensorflow-gpu==2.10.0",
         "tensorflow-addons>=0.10.0",
         "setuptools>=38.5.1",
         "huggingface_hub==0.0.8",
@@ -44,7 +47,7 @@ requirements = {
         "click",
         "g2p_en",
         "dataclasses",
-        "pyopenjtalk",
+        # "pyopenjtalk",
     ],
     "setup": ["numpy", "pytest-runner",],
     "test": [
@@ -73,8 +76,8 @@ dirname = os.path.dirname(__file__)
 setup(
     name="TensorFlowTTS",
     version="0.0",
-    url="https://github.com/tensorspeech/TensorFlowTTS",
-    author="Minh Nguyen Quan Anh, Alejandro Miguel Velasquez, Dawid Kobus, Eren Gölge, Kuan Chen, Takuya Ebata, Trinh Le Quang, Yunchao He",
+    url="https://github.com/anbuhckr/TensorFlowTTS",
+    author="Minh Nguyen Quan Anh, Alejandro Miguel Velasquez, Dawid Kobus, Eren Gölge, Kuan Chen, Takuya Ebata, Trinh Le Quang, Yunchao He, AnbuHckr",
     author_email="nguyenquananhminh@gmail.com",
     description="TensorFlowTTS: Real-Time State-of-the-art Speech Synthesis for TensorFlow 2",
     long_description=open(os.path.join(dirname, "README.md"), encoding="utf-8").read(),
