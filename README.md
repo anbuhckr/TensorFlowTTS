@@ -67,7 +67,7 @@ Different Tensorflow version should be working but not tested yet. This repo wil
 ## Installation
 ### With pip
 ```bash
-$ pip install TensorFlowTTS
+$ pip install -U git+https://github.com/anbuhckr/TensorFlowTTS.git
 ```
 ### From source
 Examples are included in the repository but are not shipped with the framework. Therefore, to run the latest version of examples, you need to install the source below.
